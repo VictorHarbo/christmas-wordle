@@ -14,7 +14,7 @@ export const useWordle = () => {
   // Get the current day of December (1-25) or null if outside Christmas period
   const getChristmasDay = (): number | null => {
     // FOR TESTING: Uncomment the line below to test a specific day
-    return 3 // This will make the app think it's December 24th
+    //return 3 // This will make the app think it's December 24th
     
     const now = new Date()
     const month = now.getMonth() // 0-11, so December is 11
