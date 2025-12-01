@@ -60,7 +60,7 @@ onUnmounted(() => {
   <div class="app christmas-theme">
     <header class="header">
       <div class="snow-decoration">❄️ ❄️ ❄️</div>
-      <h1>🎄 MORS JULE WORDLE 🎄</h1>
+      <h1>🎄 MORS JULEWORDLE 🎄</h1>
       <div v-if="isChristmasPeriod" class="christmas-day">
         {{ christmasDay }}. December
       </div>
