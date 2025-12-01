@@ -166,7 +166,7 @@ onUnmounted(() => {
 
 .christmas-day {
   font-size: 1rem;
-  color: #ffd700;
+  color: #c41e3a;
   font-weight: 600;
   margin-top: 8px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
