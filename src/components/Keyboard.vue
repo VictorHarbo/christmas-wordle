@@ -43,7 +43,7 @@ const handleKeyClick = (key: string) => {
   gap: 8px;
   padding: 8px;
   margin: 0 auto;
-  width: fit-content;
+  width: 100%;
   max-width: 500px;
 }
 
@@ -54,7 +54,9 @@ const handleKeyClick = (key: string) => {
 }
 
 .key {
-  min-width: 43px;
+  flex: 1;
+  min-width: 0;
+  max-width: 43px;
   height: 58px;
   border: none;
   border-radius: 4px;
@@ -81,7 +83,8 @@ const handleKeyClick = (key: string) => {
 }
 
 .key-wide {
-  min-width: 65px;
+  flex: 1.5;
+  max-width: 65px;
   font-size: 0.75rem;
 }
 
@@ -102,23 +105,24 @@ const handleKeyClick = (key: string) => {
 }
 
 @media (max-width: 480px) {
-  .key {
-    min-width: 32px;
-    height: 48px;
-    font-size: 0.75rem;
-  }
-  
-  .key-wide {
-    min-width: 48px;
-    font-size: 0.65rem;
-  }
-  
-  .keyboard-row {
+  .keyboard {
+    padding: 4px;
     gap: 4px;
   }
   
-  .keyboard {
-    gap: 6px;
+  .keyboard-row {
+    gap: 2px;
+  }
+  
+  .key {
+    max-width: none;
+    height: 48px;
+    font-size: 0.7rem;
+    padding: 0 2px;
+  }
+  
+  .key-wide {
+    font-size: 0.6rem;
   }
 }
 </style>
