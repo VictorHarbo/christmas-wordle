@@ -44,6 +44,7 @@ defineProps<{
   padding: 10px;
   margin: 0 auto;
   width: fit-content;
+  max-width: 100%;
 }
 
 .board-row {
@@ -127,10 +128,36 @@ defineProps<{
 }
 
 @media (max-width: 480px) {
+  .game-board {
+    padding: 5px;
+    gap: 4px;
+  }
+  
+  .board-row {
+    gap: 4px;
+  }
+  
   .tile {
-    width: 52px;
-    height: 52px;
-    font-size: 1.5rem;
+    width: 45px;
+    height: 45px;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .game-board {
+    padding: 2px;
+    gap: 3px;
+  }
+  
+  .board-row {
+    gap: 3px;
+  }
+  
+  .tile {
+    width: 38px;
+    height: 38px;
+    font-size: 1.2rem;
   }
 }
 </style>

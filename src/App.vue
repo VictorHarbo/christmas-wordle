@@ -131,6 +131,9 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .christmas-theme {
@@ -158,7 +161,6 @@ onUnmounted(() => {
   margin: 10px 0;
   color: #ffffff;
   text-shadow: 2px 2px 4px rgba(196, 30, 58, 0.5);
-  white-space: nowrap;
 }
 
 .christmas-day {
@@ -368,13 +370,56 @@ onUnmounted(() => {
 }
 
 @media (max-width: 480px) {
+  .app {
+    padding: 8px;
+  }
+  
+  .header {
+    padding: 8px 0 12px;
+    margin-bottom: 12px;
+  }
+  
   .header h1 {
-    font-size: 1.6rem;
-    letter-spacing: 0.2rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.3;
   }
   
   .snow-decoration {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .christmas-day {
+    font-size: 0.85rem;
+  }
+  
+  .color-guide {
+    font-size: 0.7rem;
+    gap: 4px;
+  }
+  
+  .color-heart {
+    font-size: 1rem;
+  }
+  
+  .message {
+    top: 60px;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+  }
+  
+  .main {
+    gap: 12px;
+  }
+  
+  .fireworks-text {
+    font-size: 2rem;
+  }
+  
+  .play-again-button {
+    padding: 12px 20px;
+    font-size: 1rem;
   }
 }
 </style>
