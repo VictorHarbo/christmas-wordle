@@ -134,6 +134,7 @@ onUnmounted(() => {
   overflow-x: hidden;
   width: 100%;
   box-sizing: border-box;
+  touch-action: manipulation;
 }
 
 .christmas-theme {
